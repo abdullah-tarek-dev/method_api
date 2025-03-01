@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>API Task</h1>
+        </div>
+        
+        <div class="get" id="style">
+            <input type="text" id="apiUrl" placeholder="Enter API URL">
+            <button id="fetchData">Get Data</button>
+            <p id="errorMessage"></p>
+
+        </div>
+        
+        <div class="add" id="style">
+            <h2>Add New data</h2>
+            <input type="text" id="addInput" placeholder="Enter new item">
+            <button id="addItem">Add Item</button>
+            <p id="errorMessagepost"></p>
+        </div>
+        
+        <div class="update" id="style">
+            <h2>Update Item</h2>
+            <input type="number" id="updateId" placeholder="Enter ID to update">
+            <input type="text" id="updateTitle" placeholder="Enter new title">
+            <button id="updateItem">Update Item</button>
+            <p id="errorMessageupdate"></p>
+        </div>
+        
+        <div class="delete" id="style">
+            <h2>Delete Item</h2>
+            <input type="number" id="deleteId" placeholder="Enter ID to delete">
+            <button id="deleteItem">Delete Item</button>
+            <p id="errorMessagedelete"></p>
+        </div>
+    </div>
+    <div class="display" id="style">
+        <h2>display data</h2>
+        <div id="displaydata"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
